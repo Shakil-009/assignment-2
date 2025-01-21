@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+/* shared design */
+body{
+    background-color: rgba(232, 232, 232, 0.684);
+}
+#logo {
+    height: 62px;
+    width: 62px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.color-1 {
+    color: #FEA301;
+}
+
+.color-2 {
+    color: #01ACFD;
+}
+
+/* nav design */
+.navbody {
+    display: flex;
+    width: 1160px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+
+}
+
+.navbar {
+    width: 100%;
+    margin: 0;
+    justify-items: center;
+
+
+}
+
+.navname {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 129px;
+    margin: 0;
+    padding: 0;
+    gap: 11px;
+}
+
+.navancor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 387px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.ancorname {
+    color: rgb(93, 88, 239);
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+ul li {
+    list-style: none;
+}
+
+
+.btn {
+    height: 50px;
+    width: 197px;
+    border-radius: 12px;
+    background: rgb(254, 163, 1);
+    border: none;
+}
+
+#home {
+    color: #FEA301;
+}
+
+#about {
+    color: #01ACFD;
+}
+
+#facilities {
+    color: #05D4DF;
+}
+
+#admission {
+    color: #5D58EF;
+}
+
+/* header design */
+.head {
+    justify-items: center;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1158px;
+}
+
+.heading-details {
+    width: 640px;
+}
+
+.title {
+    font-family: Quicksand;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 61px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.title-details {
+    color: rgb(17, 17, 17);
+    font-family: Quicksand;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.enrollbtn {
+    height: 50px;
+    width: 197px;
+    background-color: black;
+    border-radius: 12px;
+    color: white;
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: center;
+
+}
+
+/* responsive */
+
+@media screen and (max-width: 576px) {
+    body {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .navbar {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        border: 0.5px solid rgb(254, 163, 1);
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbody {
+        width: 95%;
+        margin: 0;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navname {
+        width: 46px;
+        margin: 0;
+        padding: 0;
+    }
+
+    #logo {
+        height: 46px;
+        width: 46px;
+    }
+
+    .menubar {
+        height: 30px;
+        width: 30px;
+    }
+
+    .SCHOOL {
+        display: none;
+    }
+
+    .button {
+        display: none;
+    }
+
+    .navancor {
+        display: none;
+    }
+    /* header responsive */
+    .heading{
+        flex-direction: column-reverse;
+        width: 95%;
+        margin: 28px 0;
+    }
+    .heading-details{
+        justify-items: center;
+        width: 100%;
+    }
+    .title, .title-details{
+        text-align: center;
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 576px) {
+    .navbar {
+        border: none;
+        width: 100%;
+    }
+
+    .menubar {
+        display: none;
+    }
+}
