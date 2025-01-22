@@ -451,6 +451,98 @@ main {
     margin: 80px 0 60px 0;
 }
 
+/* footer Style */
+footer {
+    background-color: #5D58EF;
+    justify-items: center;
+}
+
+.footer-assets{
+    display: flex;
+    width: 1070px;
+    justify-content: space-between;
+    align-items: normal;
+    padding-top: 123px;
+    padding-bottom: 120px;
+}
+
+.nametag {
+    display: flex;
+    align-items: center;
+}
+
+.kids-logo {
+    height: 81.65px;
+    width: 82.9px;
+    margin: 0;
+    padding: 0;
+}
+
+.kids-title {
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 42.14px;
+    font-weight: 700;
+    line-height: 39.51px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.des {
+    width: 399px;
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: 5px;
+}
+
+.about-title {
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: left;
+    padding-top: 10px;
+}
+
+.about li {
+    margin: 10px 0;
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0%;
+    text-align: left;
+
+}
+
+.social-title{
+    color: rgb(255, 255, 255);
+font-family: Quicksand;
+font-size: 26px;
+font-weight: 700;
+line-height: 26px;
+letter-spacing: 0%;
+text-align: left;
+margin-bottom: 32px;
+}
+.social-img{
+    height: 40px;
+    width: 40px;
+    margin:0 10px 0 0;
+}
+.social{
+    justify-content: flex-start;
+}
+
+
 /* responsive */
 
 @media screen and (max-width: 576px) {
@@ -590,7 +682,7 @@ main {
         column-gap: 0px;
         justify-items: center;
         gap: 10px;
-  
+
     }
 
     .story-img {
@@ -607,6 +699,7 @@ main {
         line-height: 17.12px;
 
     }
+
     .story .date1 {
         position: absolute;
         width: 103.91px;
