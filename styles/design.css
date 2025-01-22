@@ -541,7 +541,13 @@ margin-bottom: 32px;
 .social{
     justify-content: flex-start;
 }
-
+.about ul li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.social-img{
+    cursor: pointer;
+}
 
 /* responsive */
 
@@ -736,6 +742,23 @@ margin-bottom: 32px;
         left: 5px;
         margin-left: 5px;
         border-radius: 28.54px;
+    }
+    footer{
+        width: 100%;
+    }
+    .footer-assets{
+        width: 90%;
+        flex-direction: column;
+        align-items: self-start;
+    }
+    .about ul{
+        margin: 0;
+        padding: 0;
+        align-items: flex-start;
+    }
+    .about-title{
+        margin: 0;
+        padding: 0;
     }
 
 
