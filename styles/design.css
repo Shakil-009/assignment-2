@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* shared design */
 body {
     background-color: rgba(232, 232, 232, 0.684);
@@ -301,7 +302,7 @@ main {
 }
 
 /* Stories design */
-
+/* big one */
 .first-story {
     height: 630.5px;
     width: 540px;
@@ -325,6 +326,8 @@ main {
     letter-spacing: 0%;
     text-align: left;
     width: 402.5px;
+    margin-top: 80px;
+    margin-bottom: 0;
 }
 
 .story-des {
@@ -336,6 +339,116 @@ main {
     letter-spacing: 0%;
     text-align: left;
     width: 433px;
+    margin: 0;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    margin: 0 38px;
+}
+
+/* small ones */
+
+.story {
+    height: 301px;
+    width: 290px;
+    border-radius: 16px;
+
+    background: rgb(255, 255, 255);
+}
+
+.story-img {
+    position: relative;
+    width: 291px;
+    height: 177px;
+    border-radius: 16px 16px 0px 0px;
+    background: url(), rgb(255, 255, 255);
+}
+
+.story-title {
+    color: rgb(0, 0, 0);
+    font-family: Quicksand;
+    font-size: 0.95rem;
+    font-weight: 700;
+    line-height: 28.76px;
+    letter-spacing: 0%;
+    text-align: left;
+    width: 198px;
+    height: 47px;
+    margin-left: 38px;
+}
+
+.other-stories {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    width: 601px;
+}
+
+.all-stories {
+    display: flex;
+    width: 1160px;
+    gap: 20px;
+    justify-self: center;
+}
+
+.our-stories {
+    background: url(../assets/bg.png), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
+    padding-bottom: 30px;
+    padding-top: 60px;
+}
+
+.fdate {
+    position: absolute;
+    width: 174.51px;
+    height: 48px;
+    border-radius: 47.93px;
+    background: rgb(60, 216, 232);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.details {
+    position: absolute;
+    top: 2050px;
+    z-index: 1;
+    gap: 30px;
+}
+
+.story .date1 {
+    position: absolute;
+    width: 174.51px;
+    height: 38.35px;
+    border-radius: 47.93px;
+    background: rgb(93, 88, 240);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35px;
+    position: absolute;
+    top: 1895px;
+}
+
+.date2 {
+    position: absolute;
+    width: 174.51px;
+    height: 38.35px;
+    border-radius: 47.93px;
+    background: rgb(236, 96, 50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35px;
+    position: absolute;
+    top: 2210px;
+}
+
+.view {
+    justify-self: center;
+    margin: 80px 0 60px 0;
 }
 
 /* responsive */
@@ -449,6 +562,89 @@ main {
         border: 0;
         margin: 80px 0;
     }
+
+    /* Stories */
+    .all-stories {
+        width: 100%;
+        align-self: center;
+        justify-self: center;
+        justify-items: center;
+
+
+    }
+
+    .first-story {
+        display: none;
+    }
+
+    .story {
+        height: 179px;
+        width: 173px;
+        position: relative;
+    }
+
+    .other-stories {
+        width: 100%;
+        justify-self: center;
+        align-self: center;
+        column-gap: 0px;
+        justify-items: center;
+        gap: 10px;
+  
+    }
+
+    .story-img {
+        height: 105px;
+        width: 173px;
+    }
+
+    .story-title {
+        width: 110px;
+        height: 80px;
+        font-size: 9.13px;
+        margin: 0;
+        padding: 10px;
+        line-height: 17.12px;
+
+    }
+    .story .date1 {
+        position: absolute;
+        width: 103.91px;
+        height: 22.83px;
+        color: rgb(255, 255, 255);
+        font-family: Raleway;
+        font-size: 9.13px;
+        font-weight: 500;
+        line-height: 17.12px;
+        letter-spacing: 0%;
+        text-align: center;
+        text-transform: capitalize;
+        top: 51%;
+        left: 5px;
+        margin-left: 5px;
+
+    }
+
+    .date2 {
+        /* Background */
+        position: absolute;
+        width: 103.91px;
+        height: 22.83px;
+        color: rgb(255, 255, 255);
+        font-family: Raleway;
+        font-size: 9.13px;
+        font-weight: 500;
+        line-height: 17.12px;
+        letter-spacing: 0%;
+        text-align: center;
+        text-transform: capitalize;
+
+        top: 53%;
+        left: 5px;
+        margin-left: 5px;
+        border-radius: 28.54px;
+    }
+
 
 }
 
