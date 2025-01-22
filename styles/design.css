@@ -4,6 +4,7 @@
 /* shared design */
 body {
     background-color: rgba(232, 232, 232, 0.684);
+justify-content: center;
 }
 
 a:hover {
