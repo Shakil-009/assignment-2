@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 /* shared design */
-body{
+body {
     background-color: rgba(232, 232, 232, 0.684);
 }
+
+a:hover {
+    text-decoration: underline;
+}
+
 #logo {
     height: 62px;
     width: 62px;
@@ -81,6 +86,18 @@ ul li {
     border-radius: 12px;
     background: rgb(254, 163, 1);
     border: none;
+    color: white;
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0%;
+}
+
+.btn:hover {
+    background-color: #fea101cf;
+    cursor: pointer;
 }
 
 #home {
@@ -148,7 +165,177 @@ ul li {
     line-height: 30px;
     letter-spacing: 0%;
     text-align: center;
+    cursor: pointer;
 
+}
+
+.enrollbtn:hover {
+    background-color: rgb(101, 99, 99);
+}
+
+/* Curriculum design */
+
+.curriculum-title {
+    color: rgb(0, 0, 0);
+    font-family: Quicksand;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 57.5px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+main {
+    width: 100%;
+}
+
+.curriculum-body {
+    /* margin-top: 80px; */
+    width: 100%;
+    border: 1px dashed;
+    background-image: url(../assets/bg.png);
+
+}
+
+.curriculum-parts {
+    display: flex;
+    justify-content: space-between;
+    width: 1160px;
+    gap: 80px;
+    padding: 60px 0 60px 0;
+}
+
+.curriculum-align {
+    justify-items: center;
+}
+
+.curriculum-part {
+    height: 476px;
+    width: 367px;
+    justify-items: center;
+    align-content: center;
+    box-sizing: border-box;
+    border: 0.94px solid rgb(242, 232, 255);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+}
+
+.back1 {
+    background: linear-gradient(180.00deg, rgb(222, 245, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+
+.back2 {
+    background: linear-gradient(180.00deg, rgb(255, 244, 220), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+
+.back3 {
+    background: linear-gradient(180.00deg, rgb(238, 225, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+
+
+.part-img {
+    height: 111px;
+    width: 130px;
+}
+
+.part-title {
+    color: rgb(32, 32, 32);
+    font-family: Quicksand;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 30.65px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.part-des {
+    color: rgb(128, 128, 128);
+    font-family: Raleway;
+    font-size: 0.95rem;
+    font-weight: 500;
+    line-height: 28.3px;
+    letter-spacing: 0%;
+    text-align: center;
+    width: 286px;
+}
+
+.part-button {
+    font-family: Quicksand;
+    font-size: 15.09px;
+    font-weight: 700;
+    line-height: 28.3px;
+    letter-spacing: 0%;
+    text-align: left;
+    border: 0;
+    background: none;
+}
+
+.part-button:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.indicate {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background: rgb(254, 163, 1);
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+.indicate:hover {
+    background-color: #fea101cb;
+}
+
+.btn-align {
+    justify-self: center;
+    margin-bottom: 60px;
+}
+
+/* Stories design */
+
+.first-story {
+    height: 630.5px;
+    width: 540px;
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+}
+
+.first-img {
+    height: 337px;
+    width: 540px;
+    border-radius: 16px 16px 0px 0px;
+    background: url(), rgb(217, 217, 217);
+}
+
+.fstory-title {
+    color: rgb(0, 0, 0);
+    font-family: Quicksand;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 38.35px;
+    letter-spacing: 0%;
+    text-align: left;
+    width: 402.5px;
+}
+
+.story-des {
+    color: rgb(102, 102, 102);
+    font-family: Raleway;
+    font-size: 0.95rem;
+    font-weight: 500;
+    line-height: 28.76px;
+    letter-spacing: 0%;
+    text-align: left;
+    width: 433px;
 }
 
 /* responsive */
@@ -203,19 +390,64 @@ ul li {
     .navancor {
         display: none;
     }
+
     /* header responsive */
-    .heading{
+    .heading {
         flex-direction: column-reverse;
-        width: 95%;
+        width: 90%;
         margin: 28px 0;
+        align-items: center;
     }
-    .heading-details{
+
+    .heading-details {
         justify-items: center;
+        align-self: center;
         width: 100%;
     }
-    .title, .title-details{
+
+    .title,
+    .title-details {
         text-align: center;
+        width: 95%;
+        align-self: center;
+    }
+
+    .hero-kid {
+        width: 95%;
+    }
+
+    /* Responsive curriculum */
+    .btn-align {
+        display: none;
+    }
+
+    .curriculum-part {
+        align-self: center;
+    }
+
+    .curriculum-title {
+        color: rgb(0, 0, 0);
+        font-family: Quicksand;
+        font-size: 1.6rem;
+        font-weight: 700;
+        line-height: 33px;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+
+    .curriculum-parts {
+        flex-direction: column;
+        justify-items: center;
+        width: 90%;
+    }
+
+    .curriculum-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         width: 100%;
+        border: 0;
+        margin: 80px 0;
     }
 
 }
